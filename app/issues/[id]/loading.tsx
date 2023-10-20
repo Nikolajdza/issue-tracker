@@ -1,4 +1,3 @@
-import React from 'react';
 import { Box, Card, Flex } from '@radix-ui/themes';
 import { Skeleton } from '@/app/components';
 

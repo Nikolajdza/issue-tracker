@@ -1,4 +1,3 @@
-import React from 'react';
 import { notFound } from 'next/navigation';
 import { Box, Grid } from '@radix-ui/themes';
 import prisma from '@/prisma/client';

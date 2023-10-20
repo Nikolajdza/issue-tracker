@@ -1,4 +1,3 @@
-import React from 'react';
 import { Table } from '@radix-ui/themes';
 import IssueActions from '@/app/issues/IssueActions';
 import { Skeleton } from '@/app/components';
