@@ -15,7 +15,7 @@ const IssueDetailPage = async ({ params }: Props) => {
       id: parseInt(params.id)
     }
   });
-
+  
   if (!issue) {
     notFound();
   }
