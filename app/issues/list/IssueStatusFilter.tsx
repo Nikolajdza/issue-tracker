@@ -4,11 +4,11 @@ import { Select } from '@radix-ui/themes';
 import { Status } from '.prisma/client';
 import { useRouter } from 'next/navigation';
 
-const statuses: { label: string, value?: Status }[] = [
-  { label: 'All' },
-  { label: 'Open', value: 'OPEN' },
-  { label: 'In Progress', value: 'IN_PROGRESS' },
-  { label: 'Closed', value: 'CLOSED' }
+const statuses: { id: number, label: string, value?: Status }[] = [
+  { id: 1, label: 'All' },
+  { id: 2, label: 'Open', value: 'OPEN' },
+  { id: 3, label: 'In Progress', value: 'IN_PROGRESS' },
+  { id: 4, label: 'Closed', value: 'CLOSED' }
 ];
 
 const IssueStatusFilter = () => {
@@ -22,7 +22,7 @@ const IssueStatusFilter = () => {
       <Select.Trigger placeholder="Filter by status..." />
       <Select.Content>
         {statuses.map(status => (
-          <Select.Item key={status.value} value={status.value || ''}>
+          <Select.Item key={status.id} value={status.value || ''}>
             {status.label}
           </Select.Item>
         ))}
