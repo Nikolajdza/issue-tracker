@@ -18,7 +18,7 @@ const LatestIssues = async () => {
         <Table.Header>
           <Table.Row>
             <Table.RowHeaderCell>
-              <Text size="4" mb="5">Latest Issues</Text>
+              <Text className="font-bold" size="4" mb="5">Latest Issues</Text>
             </Table.RowHeaderCell>
           </Table.Row>
         </Table.Header>
